@@ -16,7 +16,7 @@ public abstract class Mortgage implements MortgageConstants {
 
         // Enforce maximum amount
         if (amount > MAX_MORTGAGE_AMOUNT) {
-            System.out.println("Amount exceeds maximum. Setting to " + MAX_MORTGAGE_AMOUNT);
+            System.out.println("The Amount exceeds maximum. Setting to " + MAX_MORTGAGE_AMOUNT);
             this.amount = MAX_MORTGAGE_AMOUNT;
         } else {
             this.amount = amount;
@@ -28,7 +28,7 @@ public abstract class Mortgage implements MortgageConstants {
         if (term == SHORT_TERM || term == MEDIUM_TERM || term == LONG_TERM) {
             this.term = term;
         } else {
-            System.out.println("Invalid term. Setting to short-term (" + SHORT_TERM + " year).");
+            System.out.println("The Invalid term. Setting to short-term (" + SHORT_TERM + " year).");
             this.term = SHORT_TERM;
         }
     }

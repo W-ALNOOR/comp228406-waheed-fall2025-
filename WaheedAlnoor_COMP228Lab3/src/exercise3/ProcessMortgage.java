@@ -8,29 +8,29 @@ public class ProcessMortgage {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the current prime interest rate (e.g., 5.5): ");
+        System.out.print("Please Enter the current prime interest rate (e.g., 5.5): ");
         double primeRate = input.nextDouble();
-        input.nextLine(); // clear buffer
+        input.nextLine();
 
         Mortgage[] mortgages = new Mortgage[3];
 
         for (int i = 0; i < mortgages.length; i++) {
-            System.out.println("\n--- Enter details for Mortgage #" + (i + 1) + " ---");
+            System.out.println("\n--- Please Enter details for Mortgage #" + (i + 1) + " ---");
 
-            System.out.print("Enter mortgage number: ");
+            System.out.print("Please Enter mortgage number: ");
             String number = input.nextLine();
 
-            System.out.print("Enter customer name: ");
+            System.out.print("Please Enter customer name: ");
             String name = input.nextLine();
 
-            System.out.print("Enter mortgage amount: ");
+            System.out.print("Please Enter mortgage amount: ");
             double amount = input.nextDouble();
 
-            System.out.print("Enter term in years (1, 3, or 5): ");
+            System.out.print("Please Enter term in years (1, 3, or 5): ");
             int term = input.nextInt();
-            input.nextLine(); // clear buffer
+            input.nextLine();
 
-            System.out.print("Enter mortgage type (B = Business, P = Personal): ");
+            System.out.print("Please Enter mortgage type (B = Business, P = Personal): ");
             String type = input.nextLine().trim().toUpperCase();
 
             Mortgage mortgage;

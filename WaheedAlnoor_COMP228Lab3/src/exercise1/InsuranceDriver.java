@@ -8,17 +8,17 @@ public class InsuranceDriver {
 
         Scanner input = new Scanner(System.in);
 
-        // Array to store Insurance objects
-        Insurance[] insuranceList = new Insurance[2]; // You can change size if needed
+        // store Insurance objects
+        Insurance[] insuranceList = new Insurance[2];
 
         for (int i = 0; i < insuranceList.length; i++) {
 
-            System.out.print("Enter insurance type (life/health): ");
+            System.out.print("Please Enter insurance type (life/health): ");
             String type = input.nextLine().toLowerCase();
 
-            System.out.print("Enter monthly cost: ");
+            System.out.print("Please Enter monthly cost: ");
             double cost = input.nextDouble();
-            input.nextLine(); // clear buffer
+            input.nextLine();
 
             Insurance obj;
 

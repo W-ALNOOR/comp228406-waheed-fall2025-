@@ -15,7 +15,7 @@ public class Life extends Insurance {
     public void displayInfo() {
         System.out.println("=== Life Insurance ===");
         System.out.println("Type: " + typeInsurance);
-        System.out.println("Monthly Cost: $" + monthlyCost);
+        System.out.println("The Monthly Cost is: $" + monthlyCost);
         System.out.println("----------------------");
     }
 }

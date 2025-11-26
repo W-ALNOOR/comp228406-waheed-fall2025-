@@ -11,6 +11,7 @@ public class PartTimeGameTester extends GameTester {
 
     @Override
     public double determineSalary() {
-        return hoursWorked * 20; // $20 per hour
+        // $20 per hour
+        return hoursWorked * 20;
     }
 }

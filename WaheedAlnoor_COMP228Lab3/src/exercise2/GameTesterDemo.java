@@ -8,7 +8,7 @@ public class GameTesterDemo {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter Game Tester Name: ");
+        System.out.println("Please Enter The Game Tester Name: ");
         String name = input.nextLine();
 
         System.out.println("Choose Tester Type (1 = Full-Time, 2 = Part-Time): ");
@@ -19,7 +19,7 @@ public class GameTesterDemo {
         if (choice == 1) {
             tester = new FullTimeGameTester(name);
         } else {
-            System.out.println("Enter hours worked: ");
+            System.out.println("Please Enter hours worked: ");
             int hours = input.nextInt();
             tester = new PartTimeGameTester(name, hours);
         }

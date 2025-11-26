@@ -8,6 +8,6 @@ public class FullTimeGameTester extends GameTester {
 
     @Override
     public double determineSalary() {
-        return 3000; // fixed monthly salary
+        return 3000;
     }
 }
