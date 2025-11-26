@@ -9,7 +9,7 @@ public class InsuranceDriver {
         Scanner input = new Scanner(System.in);
 
         // Array to store Insurance objects
-        Insurance[] insuranceList = new Insurance[2]; // You can change size if needed
+        Insurance[] insuranceList = new Insurance[2];
 
         for (int i = 0; i < insuranceList.length; i++) {
 

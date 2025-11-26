@@ -10,7 +10,7 @@ public class ProcessMortgage {
 
         System.out.print("Enter the current prime interest rate (e.g., 5.5): ");
         double primeRate = input.nextDouble();
-        input.nextLine(); // clear buffer
+        input.nextLine();
 
         Mortgage[] mortgages = new Mortgage[3];
 
@@ -28,7 +28,7 @@ public class ProcessMortgage {
 
             System.out.print("Enter term in years (1, 3, or 5): ");
             int term = input.nextInt();
-            input.nextLine(); // clear buffer
+            input.nextLine();
 
             System.out.print("Enter mortgage type (B = Business, P = Personal): ");
             String type = input.nextLine().trim().toUpperCase();
