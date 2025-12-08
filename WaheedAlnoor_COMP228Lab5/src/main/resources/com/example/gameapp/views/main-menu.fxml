@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gameapp.controllers.MainMenuController"
+      prefWidth="400" prefHeight="400"
+      style="-fx-padding: 30;">
+
+    <Label text="Game Manager System"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Button text="Add Player" prefWidth="200" onAction="#openAddPlayer"/>
+    <Button text="Update Player" prefWidth="200" onAction="#openUpdatePlayer"/>
+    <Button text="Add Game Score" prefWidth="200" onAction="#openAddGameScore"/>
+    <Button text="Player Game Report" prefWidth="200" onAction="#openReport"/>
+
+</VBox>

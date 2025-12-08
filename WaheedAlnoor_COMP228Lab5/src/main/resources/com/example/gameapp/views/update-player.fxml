@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gameapp.controllers.UpdatePlayerController"
+      prefWidth="400" prefHeight="480" style="-fx-padding: 20;">
+
+    <Label text="Update Player Information"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <ComboBox fx:id="playerCombo" promptText="Select Player to Update"/>
+
+    <TextField fx:id="firstNameField" promptText="First Name"/>
+    <TextField fx:id="lastNameField" promptText="Last Name"/>
+    <TextField fx:id="addressField" promptText="Address"/>
+    <TextField fx:id="postalCodeField" promptText="Postal Code"/>
+    <TextField fx:id="provinceField" promptText="Province"/>
+    <TextField fx:id="phoneField" promptText="Phone Number"/>
+
+    <Button text="Update Player" onAction="#updatePlayer"
+            style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-padding: 10 20;"/>
+
+    <Label fx:id="statusLabel" textFill="green"/>
+
+    <Button text="Back to Menu"
+            onAction="#onBack"
+            style="-fx-background-color: #777; -fx-text-fill: white;"/>
+
+</VBox>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gameapp.controllers.AddGameScoreController"
+      prefWidth="400" prefHeight="420" style="-fx-padding: 20;">
+
+    <Label text="Add Game Score"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <ComboBox fx:id="playerCombo" promptText="Select Player"/>
+    <ComboBox fx:id="gameCombo" promptText="Select Game"/>
+
+    <TextField fx:id="scoreField" promptText="Score"/>
+    <DatePicker fx:id="datePicker"/>
+
+    <Button text="Save Score" onAction="#saveScore"
+            style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10 20;"/>
+
+    <Label fx:id="statusLabel" textFill="green"/>
+
+    <Button text="Back to Menu" onAction="#onBack" />
+
+
+</VBox>

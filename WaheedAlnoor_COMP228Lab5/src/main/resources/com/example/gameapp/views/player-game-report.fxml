@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gameapp.controllers.PlayerGameReportController"
+      prefWidth="600" prefHeight="500" style="-fx-padding: 20;">
+
+    <Label text="Player Game Report" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <ComboBox fx:id="playerCombo" promptText="Select Player"/>
+
+    <TableView fx:id="reportTable" prefHeight="400" prefWidth="580">
+        <columns>
+            <TableColumn fx:id="colPlayer" text="Player" prefWidth="140"/>
+            <TableColumn fx:id="colGame" text="Game" prefWidth="140"/>
+            <TableColumn fx:id="colDate" text="Date" prefWidth="140"/>
+            <TableColumn fx:id="colScore" text="Score" prefWidth="120"/>
+        </columns>
+    </TableView>
+
+    <Button text="Back to Menu"
+            onAction="#onBack"
+            style="-fx-background-color: #777; -fx-text-fill: white;"/>
+
+</VBox>
